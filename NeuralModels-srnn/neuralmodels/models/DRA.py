@@ -13,7 +13,7 @@ class DRA(object):
 		'''
 		self.settings = locals()
 		del self.settings['self']
-
+		print ' i WILL ADD A LINE'
 		self.edgeRNNs = edgeRNNs
 		self.nodeRNNs = nodeRNNs
 		self.nodeToEdgeConnections = nodeToEdgeConnections
@@ -21,8 +21,9 @@ class DRA(object):
 		self.nodeLabels = nodeLabels
 		self.learning_rate = learning_rate
 		self.clipnorm = clipnorm
+		print 'i will add another line'
 		self.weight_decay = weight_decay
-		
+
 		nodeTypes = nodeRNNs.keys()
 		edgeTypes = edgeRNNs.keys()
 
