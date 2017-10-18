@@ -98,7 +98,7 @@ elif train_model == 'lstm3lr' or train_model == 'erd':
     params['dataset_prefix'] = ''
     params['drop_features'] = 0
     params['drop_id'] = '9'
-    print 'version control???'
+    print 'this is for github'
 '''
 #Malik
 params['truncate_gradient'] = 100
