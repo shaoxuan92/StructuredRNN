@@ -23,6 +23,7 @@ params = {}
 if train_model == 'srnn':
     # These hyperparameters are OKAY to tweak. They will affect training, convergence etc.
     params['initial_lr'] = 1e-3
+    print 'test branch submit'
     params['decay_schedule'] = [1.5e3, 4.5e3]  # Decrease learning rate after these many iterations
     params['decay_rate_schedule'] = [0.1, 0.1]  # Multiply the current learning rate by this factor
     params['lstm_init'] = 'uniform'  # Initialization of lstm weights
